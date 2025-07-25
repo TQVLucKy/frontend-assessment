@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.border-default {
+    @apply border-[#ccc];
+}
+.button-hover{
+    @apply transition-colors duration-300 hover:bg-[#C7C6C1];
+}
+.wrapper {
+    button.active {
+        @apply text-black border-t-0 border-b-0 ;
+    }
+}
+
+.animate-dropdown-open {
+    animation: dropdown-open 0.75s ease forwards;
+}
+
+.animate-dropdown-close {
+    animation: dropdown-close 0.75s ease forwards;
+}
+
+@keyframes dropdown-open {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes dropdown-close {
+    from {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}

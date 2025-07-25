@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card {
+    @apply p-5 rounded-md  w-full md:max-w-[326px] flex flex-col shadow-[0_0_4px_rgba(0,0,0,0.2)];
+
+    &__image {
+        @apply w-full h-auto rounded md:rounded-md;
+    }
+
+    &__content {
+        @apply flex flex-col justify-between flex-grow pt-4 text-center;
+    }
+
+    &__text {
+        @apply tracking-[0.04em];
+        line-height: 24px;
+    }
+
+    &__button {
+        @apply inline-block font-semibold tracking-widest self-center border-black border-2 px-4 py-2 mt-[15px] md:mt-4 rounded-3xl hover:bg-black hover:text-white transition-colors duration-300;
+    }
+
+}

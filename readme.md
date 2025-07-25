@@ -23,7 +23,7 @@ Both exercises were completed as individual components in a single Vue 3 + Vite 
 ###### Bonus Point
 - Add meaningful animations and transitions to enhance user experience.
 - Improved visual design and consistent styling for a polished UI.
-- **Why** `('b' + 'a' + + 'a' + 'a').toLowerCase()` results in `"banana"`:
+- **Why** `('b' + 'a' + + 'a' + 'a').toLowerCase()` results in `"banana"`:   
     `'b' + 'a'` -> `'ba'`  
     `'ba' + + 'a'` -> `'ba' + NaN` -> `'baNaN'` (unary plus tries to convert `'a'` to a number)  
     `'baNaN' + 'a'` -> `'baNaNa'`  
